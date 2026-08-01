@@ -1,0 +1,261 @@
+@media (max-width: 1300px) {
+    section {
+        padding: 25px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    nav .btn-links {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50px;
+        height: 40px;
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    nav .btn-links span {
+        width: 25px;
+        height: 2px;
+        background-color: var(--primary-color);
+    }
+
+    nav .nav-links {
+        position: absolute;
+        left: 50%;
+        top: 70px;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: #333;
+        border-radius: 10px;
+        padding: 0;
+        height: 0%;
+        overflow: hidden;
+        transition-duration: 1s
+    }
+
+    nav .content button:focus+.nav-links {
+        height: 210px;
+        padding-block: 10px;
+    }
+
+    nav .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+    .hero .content h1 {
+        font-size: 40px;
+    }
+
+    .hero .content h4 {
+        font-size: 28px;
+    }
+
+    .hero .content p {
+        font-size: 18px;
+    }
+
+    #About .container {
+        gap: 50px;
+    }
+
+    #About .container .content {
+        width: 100%;
+    }
+
+    #About .container .img-content .layout ul li {
+        width: 30px;
+        height: 30px;
+    }
+
+    #About .container .frame {
+        width: 75%;
+    }
+
+    #About .container .content p {
+        font-size: 14px;
+    }
+
+    #About .content .about-me {
+        grid-template-columns: 1fr;
+    }
+
+    #About .content .about-me .info {
+        font-size: 14px;
+    }
+
+    #About .content button {
+        padding: 10px 15px;
+    }
+
+    #Services .container .box {
+        width: 100%;
+    }
+
+    #Services .container .box:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    #Services .container .box .card {
+        width: 280px;
+    }
+
+    #Portfolio .projects .card {
+        width: calc((100%) - 20px);
+        max-width: 280px;
+        margin: auto;
+    }
+
+    #Blog .blog-content .box {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #Blog .blog-content .box .item {
+        width: 280px;
+    }
+
+    #Contact .container form {
+        width: 100%;
+    }
+
+    #Contact .container form .name-email {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #Contact .container form button {
+        width: initial;
+    }
+
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+
+
+    .hero .content h4 {
+        font-size: 24px;
+    }
+
+    .hero .content p {
+        font-size: 16px;
+    }
+
+    #About .content .about-me {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #Contact .container form {
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+
+    .hero .content h1 {
+        font-size: 50px;
+    }
+
+    #Services .container .box {
+        width: 50%;
+    }
+
+    #Portfolio .projects .card {
+        width: calc((100% / 2) - 10px);
+        max-width: 280px;
+        margin: auto;
+    }
+
+    #Blog .blog-content .box {
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    #About .container {
+        gap: 0px;
+    }
+
+    #About .container .content {
+        width: 50%;
+    }
+
+    #About .container .frame {
+        width: 75%;
+    }
+
+    #About .container .content p {
+        font-size: 14px;
+    }
+
+    #About .content .about-me .info {
+        font-size: 14px;
+    }
+
+    #About .content button {
+        padding: 10px 15px;
+    }
+
+    #Contact .container form {
+        width: 70%;
+    }
+
+    #Contact .container form .name-email {
+        gap: 10px;
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    #Services .container .box {
+        width: 20%;
+    }
+
+    #Blog .blog-content .box {
+        width: 33.33%;
+    }
+
+    #Services .container .box {
+        width: 25%;
+    }
+
+    #Services .container .box .card {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 577px) {
+
+    .title {
+        margin: 0px auto 30px;
+    }
+
+    .title h2 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}
